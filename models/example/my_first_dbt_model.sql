@@ -11,6 +11,7 @@
     materialized='incremental'
     ) }}
 
+
 select * from RAW.AGGREGATOR.OPTION_VARIANTS
 {% if is_incremental() %}
 
